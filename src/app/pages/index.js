@@ -1,11 +1,10 @@
-"use client"
 import { useState } from "react";
-import FileUpload from "../app/components/FileUpload";
-import Converter from "../app/components/Converter";
-import Result from "../app/components/Result";
-import DownloadButton from "../app/components/DownloadButton";
+import FileUpload from "../components/FileUpload";
+import Converter from "../components/Converter";
+import Result from "../components/Result";
+import DownloadButton from "../components/DownloadButton";
 
-export default function Home() {
+const IndexPage = () => {
   const [shopifyData, setShopifyData] = useState(null);
   const [wordpressData, setWordpressData] = useState(null);
 
@@ -95,4 +94,6 @@ export default function Home() {
       )}
     </div>
   );
-}
+};
+
+export default IndexPage;
